@@ -14,7 +14,6 @@ def github_connect():
     with open('mytoken.txt') as f:
         token = f.read()
     user = 'Nedbup'
-    token = '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'
     sess = github3.login(token=token)
     return sess.repository(user, 'bhptrojan')
 
